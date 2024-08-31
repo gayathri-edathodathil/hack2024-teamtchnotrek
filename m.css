@@ -1,0 +1,147 @@
+/* m.css */
+
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #b5ebf5;
+    color: #034b57;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styling */
+header {
+    background-size: cover;
+    background-position: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.25rem;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #034b57;
+    text-decoration: none;
+}
+
+/* Card Styling */
+.card {
+    border: none;
+    border-radius: 10px;
+    background-color: #ffffff;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+/* Playlist Tabs Styling */
+.nav-tabs .nav-link {
+    color: #007bff;
+    font-weight: 600;
+    border: none;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-tabs .nav-link.active {
+    color: #333;
+    border-bottom: 2px solid #007bff;
+}
+
+.tab-content {
+    margin-top: 20px;
+}
+
+/* Audio Player Styling */
+audio {
+    outline: none;
+    border-radius: 5px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Volume Control Styling */
+.volume-control label {
+    font-weight: 600;
+}
+
+.volume-control input {
+    margin-top: 10px;
+}
+
+/* Search Music Styling */
+#search-bar {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+}
+
+#music-list {
+    margin-top: 15px;
+}
+
+/* Feedback Form Styling */
+#feedback-form {
+    margin-top: 20px;
+}
+
+#feedback {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+}
+
+#feedback-form button {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+}
+
+#feedback-message {
+    margin-top: 20px;
+    font-weight: 600;
+    color: #28a745;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    border-top: 2px solid #007bff;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    .card-body {
+        padding: 20px;
+    }
+}

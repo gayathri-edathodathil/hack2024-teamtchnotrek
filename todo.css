@@ -1,0 +1,100 @@
+/* todo.css */
+
+/* Body Styling */
+body {
+    background-color: #b5ebf5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Container Styling */
+.container {
+    max-width: 600px;
+}
+
+/* Title Styling */
+h1.display-4 {
+    color: #034b57;
+    font-weight: 700;
+}
+.nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+
+.nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+.nav ul li a {
+    color: #034b57;
+    text-decoration: none;
+}
+
+/* Card Styling */
+.card {
+    border: none;
+    border-radius: 10px;
+}
+
+/* Card Body Styling */
+.card-body {
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+/* Date Input Styling */
+#task-date {
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid #ced4da;
+}
+
+/* To-Do List Styling */
+#todo-list {
+    margin-top: 20px;
+}
+
+.list-group-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border: none;
+    border-bottom: 1px solid #e9ecef;
+    font-size: 18px;
+    background-color: #f8f9fa;
+}
+
+/* Checkbox Styling */
+.task-checkbox {
+    width: 20px;
+    height: 20px;
+    accent-color: #007bff;
+}
+
+/* Status Styling */
+.status {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/* Message Styling */
+#message {
+    color: #28a745;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* Hover Effect on To-Do Items */
+.list-group-item:hover {
+    background-color: #e9ecef;
+    cursor: pointer;
+}
+
+/* Checked Items Styling */
+.task-checkbox:checked + span {
+    text-decoration: line-through;
+    color: #6c757d;
+}

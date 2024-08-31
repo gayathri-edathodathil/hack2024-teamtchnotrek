@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Specialist To-Do List</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="text-center mb-4 nav">
+            <h1 class="display-4">Healthcare Specialist To-Do List</h1>
+            <nav>
+                <ul>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="schedule.html">Reschedule</a></li>
+                    <li><a href="todo.html">Discussions</a></li>
+                    <li><a href="meditation.html">Meditation</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <div class="mb-3">
+                    <label for="task-date" class="form-label">Select Date:</label>
+                    <input type="date" id="task-date" class="form-control">
+                </div>
+                <ul id="todo-list" class="list-group list-group-flush">
+                    <li class="list-group-item d-flex align-items-center">
+                        <input type="checkbox" class="form-check-input me-3 task-checkbox">
+                        <span>Review patient charts</span>
+                        <span class="status ms-auto"></span>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center">
+                        <input type="checkbox" class="form-check-input me-3 task-checkbox">
+                        <span>Update patient records</span>
+                        <span class="status ms-auto"></span>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center">
+                        <input type="checkbox" class="form-check-input me-3 task-checkbox">
+                        <span>Prepare for staff meeting</span>
+                        <span class="status ms-auto"></span>
+                    </li>
+                    <li class="list-group-item d-flex align-items-center">
+                        <input type="checkbox" class="form-check-input me-3 task-checkbox">
+                        <span>Check inventory</span>
+                        <span class="status ms-auto"></span>
+                    </li>
+                </ul>
+                <p id="message" class="text-center mt-3"></p>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <script src="todo.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditational Music</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="m.css">
+</head>
+<body>
+    <header class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <div>
+                <h1 class="display-3">Meditational Music</h1>
+                <p class="lead">Find your inner peace with soothing music</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="schedule.html">Reschedule</a></li>
+                    <li><a href="todo.html">To-Do</a></li>
+                    <li><a href="meditation.html">Disussions</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card shadow-lg">
+                    <div class="card-body">
+                        <h5 class="card-title">Playlists</h5>
+                        <ul class="nav nav-tabs" id="playlist-tabs">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="playlist1-tab" data-bs-toggle="tab" href="#playlist1">Relaxing Music</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="playlist2-tab" data-bs-toggle="tab" href="#playlist2">Nature Sounds</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content mt-3">
+                            <div class="tab-pane fade show active" id="playlist1">
+                                <!-- Playlist 1 Content -->
+                                <audio id="audio-player1" controls class="w-100 mt-3">
+                                    <source src="path-to-your-music-file1.mp3" type="audio/mpeg">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                            <div class="tab-pane fade" id="playlist2">
+                                <!-- Playlist 2 Content -->
+                                <audio id="audio-player2" controls class="w-100 mt-3">
+                                    <source src="path-to-your-music-file2.mp3" type="audio/mpeg">
+                                    Your browser does not support the audio element.
+                                </audio>
+                            </div>
+                        </div>
+                        <div class="volume-control mt-3">
+                            <label for="volume">Volume:</label>
+                            <input type="range" id="volume" min="0" max="1" step="0.1" value="0.5" class="form-range">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <div class="card shadow-lg">
+                    <div class="card-body">
+                        <h5 class="card-title">Search Music</h5>
+                        <input type="text" id="search-bar" class="form-control mb-3" placeholder="Search for music...">
+                        <div id="music-list">
+                            <!-- Music items will be dynamically added here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row mt-5">
+            <div class="col-md-12">
+                <div class="card shadow-lg">
+                    <div class="card-body">
+                        <h5 class="card-title">Feedback</h5>
+                        <form id="feedback-form">
+                            <div class="mb-3">
+                                <label for="feedback" class="form-label">Leave your feedback:</label>
+                                <textarea id="feedback" class="form-control" rows="3" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                        <div id="feedback-message" class="mt-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-4">
+        <p>&copy; 2024 Meditational Music. All rights reserved.</p>
+    </footer>
+
+    <audio id="background-music" loop>
+        <source src="path-to-background-music.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+    <script src="m.js"></script>
+</body>
+</html>

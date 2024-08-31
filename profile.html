@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedAlign Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #034b57;
+        }
+
+        .header {
+            height: 50px;
+            background-color: #b5ebf5;
+            color: #034b57;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .header .logo svg {
+            margin-right: 10px;
+        }
+
+        .header .nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        .header .nav a {
+            color: #034b57;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .content {
+            display: flex;
+            padding: 20px;
+        }
+
+        .sidebar {
+            background-color: #034b57;
+            color: #b5ebf5;
+            width: 250px;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .sidebar h3{
+            color: white;
+        }
+        .sidebar h2{
+            color: #034b57;
+            padding: 10px;
+            background-color: white;
+            border-radius: 5px;
+        }
+        .main {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .main .card {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        .main .card h2 {
+            margin-bottom: 10px;
+        }
+
+        .main .card ul{
+            list-style: none;
+            padding-left: 20px;
+            display: flex;
+        }
+        .main .card ul li img{
+            width: 80px;
+            padding-right: 50px;
+            height: auto;
+        }
+        .main .card .appoint .ap{
+            width: 80%;
+            height: 100px;
+            background-color: #b5ebf5;
+            color: #034b57;
+            align-content: center;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-radius: 10px;
+        }
+        .main .card .appoint .ap h4,.main .card .appoint .ap p{
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <h2><a href="home.html" style="text-decoration: none; color: #034b57;">MedAlign</a></h2>
+        </div>
+        <nav class="nav">
+            <a href="community.html">Dicussions</a>
+            <a href="healthcare.html">Reschedule</a>
+            <a href="todo.html">To-Do</a>
+            <a href="meditation.html">Meditation</a>
+        </nav>
+    </header>
+
+    <main class="content">
+        <aside class="sidebar">
+            <div class="profile">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                </svg>
+            </div>
+            <h2>Personal Info</h2>
+            <div><h3>Name</h3>John Smith</div>
+            <div><h3>Phone No.</h3>+1234567890</div>
+            <div><h3>Address</h3><address>lorem ipsum <br>Lorem ipsum dolor sit amet <br>consectetur adipisicing elit.</address></div>
+        </aside>
+        <section class="main">
+            <div class="card">
+                <h2>My Rewards</h2>
+                <ul>
+                    <li><img src="star_17436944.png" alt=""></li>
+                    <li><img src="star_17436944.png" alt=""></li>
+                    <li><img src="star_17436944.png" alt=""></li>
+                    <li><img src="star_17436944.png" alt=""></li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>My Appointments</h2>
+                <div class="appoint">
+                    <div class="ap">
+                        <h4>Appointment 1</h4>
+                        <p>29 September 2024 <br>1:30pm-2:00pm </p>
+                    </div>
+                    <div class="ap">
+                        <h4>Appointment 2</h4>
+                        <p>29 September 2024 <br>1:30pm-2:00pm </p>
+                    </div>
+                    <div class="ap">
+                        <h4>Appointment 3</h4>
+                        <p>29 September 2024 <br>1:30pm-2:00pm </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

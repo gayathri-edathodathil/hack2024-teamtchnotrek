@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Workforce Management System</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="schedule.css">
+</head>
+<body>
+    <header class="bg-primary text-white py-3">
+        <div class="container" >
+            <h1 class="text-center">Healthcare Workforce Management System</h1>
+            <nav>
+                <ul>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="community.html">Discussions</a></li>
+                    <li><a href="todo.html">To-Do</a></li>
+                    <li><a href="meditation.html">Meditation</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="py-5">
+        <div class="container">
+            <!-- Reschedule Shift Section -->
+            <section id="reschedule-shift" class="card mb-4">
+                <div class="card-body">
+                    <h2 class="card-title">Reschedule Shift</h2>
+                    <form id="reschedule-shift-form">
+                        <div class="form-group">
+                            <label for="shift-id">Shift ID:</label>
+                            <input type="text" id="shift-id" name="shift-id" class="form-control" placeholder="Enter shift ID" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="new-start-time">New Start Time:</label>
+                            <input type="datetime-local" id="new-start-time" name="new-start-time" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="new-end-time">New End Time:</label>
+                            <input type="datetime-local" id="new-end-time" name="new-end-time" class="form-control" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Reschedule Shift</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Swap Shift Section -->
+            <section id="swap-shift" class="card mb-4">
+                <div class="card-body">
+                    <h2 class="card-title">Swap Shift</h2>
+                    <form id="swap-shift-form">
+                        <div class="form-group">
+                            <label for="shift-id-to-swap">Current Shift ID:</label>
+                            <input type="text" id="shift-id-to-swap" name="shift-id-to-swap" class="form-control" placeholder="Enter current shift ID" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="new-shift-id">New Shift ID:</label>
+                            <input type="text" id="new-shift-id" name="new-shift-id" class="form-control" placeholder="Enter new shift ID" required>
+                        </div>
+                        <button type="submit" class="btn btn-warning">Swap Shift</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- Request Additional Shift Section -->
+            <section id="additional-shift" class="card mb-4">
+                <div class="card-body">
+                    <h2 class="card-title">Request Additional Shift</h2>
+                    <form id="additional-shift-form">
+                        <div class="form-group">
+                            <label for="additional-shift-date">Shift Date:</label>
+                            <input type="date" id="additional-shift-date" name="additional-shift-date" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="additional-shift-start-time">Start Time:</label>
+                            <input type="time" id="additional-shift-start-time" name="additional-shift-start-time" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="additional-shift-end-time">End Time:</label>
+                            <input type="time" id="additional-shift-end-time" name="additional-shift-end-time" class="form-control" required>
+                        </div>
+                        <button type="submit" class="btn btn-success">Request Additional Shift</button>
+                    </form>
+                </div>
+            </section>
+
+            <!-- View Reward Points Section -->
+            <section id="view-reward-points" class="card mb-4">
+                <div class="card-body">
+                    <h2 class="card-title">View Reward Points</h2>
+                    <button id="view-reward-points-btn" class="btn btn-info">Click to View Reward Points</button>
+                    <div id="reward-points-info" class="mt-3" style="display: none;">
+                        <p>Your current reward points: <span id="reward-points-value">0</span></p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-success text-white py-3">
+        <div class="container">
+            <p class="text-center mb-0">&copy; 2024 Healthcare Workforce Management System</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="scripts.js"></script>
+</body>
+</html>
